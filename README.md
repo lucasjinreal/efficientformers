@@ -5,6 +5,7 @@
 Currently supported models:
 
 - [efficientformer - 2022](https://github.com/snap-research/EfficientFormer);
+- [Edge Vit - ECCV2022](https://arxiv.org/pdf/2205.03436.pdf);
 
 
 will add:
@@ -36,5 +37,11 @@ a = efficientformer_l1(num_classes=10, distillation=False)
 o = a(x)
 
 print(o.shape)
+
+# EdgeVit
+
+from efficientformers.cv.edgevit import edgevit_xs
+
+model = edgevit_xs()
 
 ```
